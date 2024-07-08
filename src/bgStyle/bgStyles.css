@@ -13,13 +13,7 @@ body{
 
 /* blob shape */
 
-.blob{
-    position: absolute;
-    z-index: -1;
-    height: 100vh;
-    width: 140vw;
-    right: -30vw;
-    bottom: -50vh;
-    border-radius: 50%;
-    background-color: #8685EF;
-}
+
+
+/* animation for big ball */
+

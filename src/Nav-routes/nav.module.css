@@ -94,10 +94,6 @@ a{
     .navUl > li:nth-child(4){
         left: 180px;
     }
-    .navUl:hover li{
-        left: 0;
-    }
-    .navUl:hover > :nth-child(1){
-        rotate: 360deg;
-    }
+    
+    
 }

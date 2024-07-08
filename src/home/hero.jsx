@@ -25,7 +25,7 @@ function Hero(props){
                 
             </div>
             <img className={style.heroProfile} src="" alt="" height={400} width={400}/>
-            <div className='blob'></div>
+       
         </div>
      
         </>
