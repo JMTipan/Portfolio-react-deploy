@@ -3,6 +3,7 @@ import javascritp_logo from "../assets/Javascript.png"
 import html_logo from "../assets/Html.webp"
 import css_logo from "../assets/Css.png"
 import react_logo from '../assets/React.png'
+import among_us from '../assets/among-us.jpg'
 
 function Hero(props){
 
@@ -13,21 +14,17 @@ function Hero(props){
             <div className={style.hero}>
                 <h1>Hi, Im Joshua im a front end developer</h1>
                 <p>i still dont kow what to put here :)</p>
-                <div className={style.techStackContainer}>
-                    <h3>Tech Stack</h3>
-                    <div className={style.techLayout}>
-                        <img src={javascritp_logo} alt="javascript" width={40}/>
-                        <img src={html_logo} alt="html" width={40}/>
-                        <img src={css_logo} alt="css" width={40}/>
-                        <img src={react_logo} alt="React" width={40}/>
-                    </div>
-                </div>
-                
             </div>
-            <img className={style.heroProfile} src="" alt="" height={400} width={400}/>
-       
+            <img className={style.heroProfile} src={among_us} alt="" height={400} width={400}/>
+            <div className={style.techStackContainer}>
+                <img src={javascritp_logo} alt="javascript" width={50}/>
+                <img src={html_logo} alt="html" width={50}/>
+                <img src={css_logo} alt="css" width={50}/>
+                <img src={react_logo} alt="react" width={50}/>
+            </div>
         </div>
-     
+
+          
         </>
     );
 }

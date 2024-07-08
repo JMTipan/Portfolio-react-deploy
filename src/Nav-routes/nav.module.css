@@ -40,60 +40,20 @@ a{
 .navList:hover{
     background-color: var(--backgroundColor-list);
 }
-
+.byname{
+    position: absolute;
+    padding: 19.200px;
+    color: #8685EF;
+}
 
 /* phone screen size */
 
-.navMoveSide{
-    position: absolute;
-    right: 0;
-}
-
-@media (max-width: 800px) {
-    .burgerStyle{
-        display: flex;
-        position: relative;
-        left: 4vw;
-        margin: 2vw;
-        justify-content: center;
-        gap: 5px;
-        align-items: center;
-        height: 50px;
-        width: 50px;
-        background-color: #8685EF;
-        border-radius: 50%;
-        rotate: 90deg;
-        transition: 0.4s;
-    }
-    .burgerStyle div{
-        height: 30px;
-        width: 5px;
-        background-color: black;
-        border-radius: 5px;
-        
-    }
-    /* remove the flex */
+@media (max-width: 700px) {
     .navUl{
-        display: block;
-        width: fit-content;
-        position: relative;
-        overflow-x: hidden;
+        display: none;
     }
-    .navList{
-        position: relative;
+    .byname{
+        font-size: 1.5rem;
     }
-    .navUl > :nth-child(1){
-        z-index: 1;
-    }
-    .navUl > li:nth-child(2){
-        left: 140px;
-    }
-    .navUl > li:nth-child(3){
-        left: 160px;
-    }
-    .navUl > li:nth-child(4){
-        left: 180px;
-    }
-    
     
 }

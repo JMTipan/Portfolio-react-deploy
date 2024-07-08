@@ -6,14 +6,79 @@
 body{
     background-color: #ffffff;
     font-family: Poppins;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
 
-/* blob shape */
+/* wiggle balls */
+
+
+.ball-1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #8785ef5b;
+    animation-name: wiggles;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.ball-2{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #8785ef5b;
+    animation:roamingBalls-2  300s, wiggles 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.ball-3{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #8785ef3a;
+    animation:roamingBalls-3 400s, wiggles 30s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
 
 
 
-/* animation for big ball */
+/* animation balls :) */
 
+
+@keyframes wiggles{
+    0%{
+        border-top-left-radius: 60%;
+    }
+    
+    40%{
+        border-top-right-radius: 60%;
+    }
+    70%{
+        border-bottom-right-radius: 60%;
+    }
+    90%{
+        border-bottom-left-radius: 60%;
+    }
+    100%{
+        border-top-left-radius: 60%;
+    }
+}
+
+@keyframes roamingBalls-2 {
+    from {
+        transform: translate(70vw, 35vw);
+    }
+}
+@keyframes roamingBalls-3 {
+    from {
+        transform: translate(-60vw, -30vw);
+    }
+}

@@ -5,29 +5,32 @@
     --text-color: black; 
     /*  */
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(200px, auto);
 }
 
 /* hero style section */
 .hero{
-    
+    justify-self: center;
+    align-self: end;
     background-color: #8685EF;
     color: #ffffff;
     border: 1px solid white;
     width: 40vw;
-    padding: 10px;
-    font-size: 1.5rem;
+    height: 40vh;
     padding: 3vw;
+    font-size: 1.5rem;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 50px;
+    position: relative;
 }
 
 
 .heroProfile{
+    justify-self: center;
+    align-self: end;
     border: 2px solid;
     border-radius: 60% 50% 50% 50%;
     animation: wiggle 3s;
@@ -39,23 +42,42 @@
 
 /* Tech stack styles */
 
-.techLayout{
+.techStackContainer{
+    position: relative;
     display: flex;
     justify-content: center;
-    gap: 10px;
-}
-.techStackContainer{
-    background-color: #ffffff;
-    color:#8685EF;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    justify-self: center;
     border-radius: 20px;
+    border-bottom: 5px solid #5F5C6D;
 }
-
+.techStackContainer::after{
+    content: "Tech Stack";
+    position: absolute;
+    top: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+    color:#8685EF;
+}
 
 /* phone size */
 
-@media (max-width: 700px) {
+@media (max-width: 700px){
     .hero{
         font-size: 1rem;
+        height: fit-content;
+        width: 70vw;
+    }
+    .heroProfile{
+        width: 45vw;
+        height: 45vw;
+    }
+    .heroFlexContainer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
