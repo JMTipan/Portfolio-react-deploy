@@ -1,0 +1,81 @@
+
+
+/* hero container */
+.heroFlexContainer{
+    --text-color: black; 
+    /*  */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+/* hero style section */
+.hero{
+    
+    background-color: #8685EF;
+    color: #ffffff;
+    border: 1px solid white;
+    width: 40vw;
+    padding: 10px;
+    font-size: 1.5rem;
+    padding: 3vw;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+.heroProfile{
+    border: 2px solid;
+    border-radius: 60% 50% 50% 50%;
+    animation: wiggle 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    color: #8685EF;
+    background-color: white;
+}
+
+/* Tech stack styles */
+
+.techLayout{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.techStackContainer{
+    background-color: #ffffff;
+    color:#8685EF;
+    border-radius: 20px;
+}
+
+
+/* phone size */
+
+@media (max-width: 700px) {
+    .hero{
+        font-size: 1rem;
+    }
+}
+
+/* animation for heroprofile */
+
+@keyframes wiggle{
+    0%{
+        border-top-left-radius: 60%;
+    }
+    
+    40%{
+        border-top-right-radius: 60%;
+    }
+    70%{
+        border-bottom-right-radius: 50%;
+    }
+    90%{
+        border-bottom-left-radius: 50%;
+    }
+    100%{
+        border-top-left-radius: 40%px;
+    }
+}

@@ -1,0 +1,103 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* this menu is hidden if != phone screen */
+
+
+/* Nav list styles section*/
+
+.navUl{
+    /* variable */
+    --text-color: red;
+    --backgroundColor-list: #E3E0F3;
+    --fontSize: 1.3rem; 
+    /*  */
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    gap: 3vw;
+}
+
+.navList{
+    padding: 1.2rem;
+    margin-right: 1vw;
+    font-size: var(--fontSize);
+    transition: 0.4s;
+    
+}
+a{
+    color: #8685EF;
+}
+
+.navList:hover{
+    background-color: var(--backgroundColor-list);
+}
+
+
+/* phone screen size */
+
+.navMoveSide{
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 800px) {
+    .burgerStyle{
+        display: flex;
+        position: relative;
+        left: 4vw;
+        margin: 2vw;
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        background-color: #8685EF;
+        border-radius: 50%;
+        rotate: 90deg;
+        transition: 0.4s;
+    }
+    .burgerStyle div{
+        height: 30px;
+        width: 5px;
+        background-color: black;
+        border-radius: 5px;
+        
+    }
+    /* remove the flex */
+    .navUl{
+        display: block;
+        width: fit-content;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .navList{
+        position: relative;
+    }
+    .navUl > :nth-child(1){
+        z-index: 1;
+    }
+    .navUl > li:nth-child(2){
+        left: 140px;
+    }
+    .navUl > li:nth-child(3){
+        left: 160px;
+    }
+    .navUl > li:nth-child(4){
+        left: 180px;
+    }
+    .navUl:hover li{
+        left: 0;
+    }
+    .navUl:hover > :nth-child(1){
+        rotate: 360deg;
+    }
+}
