@@ -10,7 +10,7 @@ function Hero(props){
 
     return (
         <>
-        <div className={style.heroFlexContainer}>
+        <div className={style.heroGridContainer}>
             <div className={style.hero_techStack}>
                 <div className={style.hero}>
                     <h1>Hi, Im Joshua im a front end developer</h1>
@@ -23,7 +23,6 @@ function Hero(props){
                     <img src={react_logo} alt="react" width={50}/>
                 </div>
             </div>
-
             <img className={style.heroProfile} src={among_us} alt="" height={400} width={400}/>
 
         </div>

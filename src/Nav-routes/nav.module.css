@@ -24,6 +24,7 @@
     align-items: center;
     list-style: none;
     gap: 3vw;
+    position: fixed;
 }
 
 .navList{
@@ -44,11 +45,12 @@ a{
     position: absolute;
     padding: 19.200px;
     color: #8685EF;
+    left: 0;
 }
 
 /* phone screen size */
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .navUl{
         display: none;
     }
