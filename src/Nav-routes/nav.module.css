@@ -27,15 +27,20 @@
     position: fixed;
 }
 
+.menu{
+    display: flex;
+}
+
+
 .navList{
     padding: 1.2rem;
     margin-right: 1vw;
     font-size: var(--fontSize);
     transition: 0.4s;
-    
+    z-index: 1;
 }
 a{
-    color: #8685EF;
+    color: #5050af;
 }
 
 .navList:hover{
@@ -44,18 +49,18 @@ a{
 .byname{
     position: absolute;
     padding: 19.200px;
-    color: #8685EF;
+    color: #5050af;
     left: 0;
 }
 
 /* phone screen size */
 
-@media (max-width: 600px) {
+@media (max-width: 730px) {
     .navUl{
-        display: none;
+        height: 40px;
     }
     .byname{
         font-size: 1.5rem;
+        padding: 0;
     }
-    
 }

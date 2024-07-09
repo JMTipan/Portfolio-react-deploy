@@ -26,6 +26,7 @@
     text-align: center;
     border-radius: 50px;
     position: relative;
+    z-index: -1;
 }
 
 
@@ -70,17 +71,20 @@
     font-size: 2rem;
     font-weight: bold;
     color:#8685EF;
+    transition: 0.2s;
+}
+
+.techStackContainer:hover::before{
+    transform: scale(120%);
 }
 
 /* phone size */
 
-@media (max-width: 600px){
+@media (max-width: 730px){
     :root{
         font-size: 0.7rem;
     }
-    .techStackContainer{
-        border-radius: 0;
-    }
+
     .techStackContainer img{
         height: 8vw;
         width: 8vw;
@@ -98,13 +102,17 @@
     .heroProfile{
         height: 60vw;
         width: 60vw;
-        align-self:baseline;
+        align-self:center;
     }
     .hero_techStack{
         align-self: end;
     }
     .hero{
         width: 80vw;
+    }
+    .techStackContainer:hover::before{
+        rotate: 360deg;
+        border-style: none;
     }
 }
 

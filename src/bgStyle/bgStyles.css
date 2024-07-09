@@ -12,7 +12,9 @@ body{
 
 
 /* wiggle balls */
-
+.ball{
+    transition: 2s;
+}
 
 .ball-1{
     height: 10vw;
